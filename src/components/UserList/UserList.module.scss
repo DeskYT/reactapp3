@@ -1,12 +1,12 @@
 .container{
   min-width: 800px;
   min-height: 50vh;
-  background-color: gray;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  align-content: center;
-  padding-top: 50px;
+  align-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .loadButton{
@@ -15,4 +15,20 @@
   background-color: white;
   padding: 10px 20px;
   margin-top: 20px;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.mainContainer{
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 20px;
+  min-height: 100vh;
 }

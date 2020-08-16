@@ -5,8 +5,14 @@ export default class UserItem extends Component {
   constructor(props) {
     super(props);
   }
+
+  removeUser = () => {
+    this.props.removeUser(this.props.id);
+  }
+
   render() {
     const {
+      id,
       name,
       location,
       phone,
@@ -18,12 +24,18 @@ export default class UserItem extends Component {
     console.log(this.props);
 
     return (
-      <div className={styles.userItemContainer}>
-        <img className={styles.userAvatar} src={imgSrc} alt="userAvatar" />
-        <div className={styles.userFName}>{`${name.first} ${name.last}`}</div>
-        <div>{`Phone number: ${phone}`}</div>
-        <div>{`${location.country} ${location.city}`}</div>
+      <div className={styles.userItemContainer} id={id}>
+        <div className={styles.userAvatar}>
+          <img src={imgSrc} alt="userAvatar"/>
+        </div>
+        <div className="userInfo">
+          <h2 className={styles.userFName}>{`${name.first} ${name.last}`}</h2>
+          <h3 className={styles.userEmail}>{email}</h3>
+          <h4 className={styles.userLocation}>{`${location.city}, ${location.country}`}</h4>
+        </div>
+        <div className={styles.removeCross} onClick={this.removeUser}>X</div>
       </div>
+
     );
   }
 }

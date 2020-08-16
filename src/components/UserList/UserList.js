@@ -51,10 +51,16 @@ export default class UserList extends Component {
 
     console.log(this.state);
   };
-
+  removeUser = (id) =>{
+    if (id > -1) {
+      this.setState({
+        users: this.state.users.filter((value, index)=> index !== id)
+      })
+    }
+  }
   mapUsers = () => {
-    return this.state.users.map((user) => (
-      <UserItem {...user} key={user.cell} />
+    return this.state.users.map((user, id) => (
+      <UserItem {...user} id={id} key={user.cell} removeUser={this.removeUser} />
     ));
   };
 
@@ -69,13 +75,16 @@ export default class UserList extends Component {
   render() {
     const { users, isFetching, error } = this.state;
     return (
-      <div className={styles.container}>
-        {isFetching && <Spinner />}
-        {error && <Error error={error} hideError={this.hideError} />}
-        {users.length > 0 && this.mapUsers()}
+      <div className={styles.mainContainer}>
+        <div className={styles.container}>
+          {isFetching && <Spinner />}
+          {error && <Error error={error} hideError={this.hideError} />}
+          {users.length > 0 && this.mapUsers()}
+          {/*<div onClick={this.handleToggleClick}>{this.state.isStated ? 'UnState it':'State it'}</div>*/}
+        </div>
         <div className={styles.loadButton} onClick={this.fetchUsers}>LOAD</div>
-        {/*<div onClick={this.handleToggleClick}>{this.state.isStated ? 'UnState it':'State it'}</div>*/}
       </div>
+
     );
   }
 }

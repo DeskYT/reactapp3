@@ -1,4 +1,4 @@
-.userItemContainer {
+/*.userItemContainer {
   width: 100%;
   min-width: 300px;
   min-height: 100px;
@@ -23,4 +23,68 @@
 
 .userFName{
   margin-top: 10px;
+}
+*/
+
+.userItemContainer{
+  box-sizing: border-box;
+  background-color: #242424;
+  text-align: center;
+  width: 320px;
+  margin-top: 120px;
+  border-radius: 10px;
+  flex-basis: 320px;
+
+}
+
+.userItemContainer ~ .userItemContainer{
+  margin-left: 50px;
+}
+
+.userInfoContainer > *{
+  margin: 0 auto;
+}
+.userAvatar{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid gray;
+  margin: -65px auto 0;
+  overflow: hidden;
+}
+.userAvatar > img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+/*
+.userInfo > h2, h3, h4, h5{
+  font-family: "Antipasto Pro";
+  margin: 0;
+}*/
+.userFName{
+  margin-top: 15px;
+  text-align: center;
+  color: #adadad;
+  padding: inherit;
+}
+.userLocation{
+  margin-top: 5px;
+  text-align: center;
+  color: lightslategray;
+  padding: inherit;
+}
+.userEmail{
+  margin-top: 5px;
+  text-align: center;
+  color: #00ad1e;
+  padding: inherit;
+}
+.removeCross{
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  user-select: none;
 }
