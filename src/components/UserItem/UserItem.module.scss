@@ -1,0 +1,26 @@
+.userItemContainer {
+  width: 100%;
+  min-width: 300px;
+  min-height: 100px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userItemContainer ~ .userItemContainer{
+  margin-top: 20px;
+}
+
+.userAvatar {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.userFName{
+  margin-top: 10px;
+}

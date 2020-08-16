@@ -1,0 +1,15 @@
+.errorContainer{
+  background-color: #d40000;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.errorClose{
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
