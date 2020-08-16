@@ -13,14 +13,23 @@ export default class UserList extends Component {
       isFetching: true,
       isStated: false,
       error: null,
+      deg: 180,
     };
   }
-
   componentDidMount() {
-    this.fetchUsers()
-        /*.catch(e => {
-          this.setState({error: e})
-        });*/
+    this.fetchUsers();
+    let intervalId = setInterval(this.timer, 1000/15);
+    // store intervalId in the state so it can be accessed later:
+    this.setState({intervalId: intervalId});
+  }
+
+  componentWillUnmount() {
+    // use intervalId from the state to clear the interval
+    clearInterval(this.state.intervalId);
+  }
+  timer = () => {
+    // setState method is used to update the state
+    this.setState({ deg: this.state.deg + 1 });
   }
 
   hideError = () => {
@@ -49,7 +58,7 @@ export default class UserList extends Component {
 
 
 
-    console.log(this.state);
+    //console.log(this.state);
   };
   removeUser = (id) =>{
     if (id > -1) {
@@ -67,15 +76,18 @@ export default class UserList extends Component {
   handleClick = (event) => {
     event.preventDefault();
     this.fetchUsers();
-    console.log(event.currentTarget);
+    //console.log(event.currentTarget);
   }
   handleToggleClick = () =>{
     this.setState({isStated: !this.state.isStated});
   }
+
   render() {
     const { users, isFetching, error } = this.state;
+    let stls =  `linear-gradient(${this.state.deg}deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)`;
+    console.log(styles.mainContainer);
     return (
-      <div className={styles.mainContainer}>
+      <div className={styles.mainContainer} style={{background:`${stls}`}}>
         <div className={styles.container}>
           {isFetching && <Spinner />}
           {error && <Error error={error} hideError={this.hideError} />}

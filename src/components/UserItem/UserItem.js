@@ -21,7 +21,7 @@ export default class UserItem extends Component {
       picture: { medium: imgSrc },
     } = this.props;
 
-    console.log(this.props);
+    //console.log(this.props);
 
     return (
       <div className={styles.userItemContainer} id={id}>
