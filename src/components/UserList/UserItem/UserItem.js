@@ -29,6 +29,12 @@ export default class UserItem extends Component {
 
   }
 
+  getIcons(){
+      return this.state.icons.map((value, index) => {
+          return <UserIcon key={index} changeActive={this.changeActive} text={value.text} type={value.type} isActive={value.isActive}/>
+      })
+  }
+
   render() {
     const {
       id,
@@ -44,9 +50,7 @@ export default class UserItem extends Component {
                   <h2 className={styles.userInfo}>{renderText}</h2>
               </div>
               <div className={styles.iconContainer}>
-                  {this.state.icons.map((value, index) => {
-                      return <UserIcon key={index} changeActive={this.changeActive} text={value.text} type={value.type} isActive={value.isActive}/>
-                  })}
+                  {this.getIcons()}
               </div>
               <div className={styles.removeCross} onClick={this.removeUser}>X</div>
           </div>
