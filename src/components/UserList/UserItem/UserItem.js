@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './UserItem.module.scss';
-import UserIcon from "./UserIcon.js";
+import UserIcon from "./UserIcon/UserIcon.js";
 
 export default class UserItem extends Component {
   constructor(props) {

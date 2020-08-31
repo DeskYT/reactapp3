@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Spinner from '../Spinner/Spinner';
-import UserItem from '../UserItem/UserItem';
+import UserItem from './UserItem/UserItem';
 import { getData } from '../../api';
 import styles from './UserList.module.scss';
 import Error from "../Error/Error";
