@@ -29,7 +29,7 @@ export default class UserList extends Component {
   }
   timer = () => {
     // setState method is used to update the state
-    this.setState({ deg: this.state.deg + 1 });
+    //this.setState({ deg: this.state.deg + 1 });
   }
 
   hideError = () => {
@@ -55,8 +55,6 @@ export default class UserList extends Component {
           })
         });
     //const newUsers = await getData();
-
-
 
     //console.log(this.state);
   };
@@ -85,7 +83,7 @@ export default class UserList extends Component {
   render() {
     const { users, isFetching, error } = this.state;
     let stls =  `linear-gradient(${this.state.deg}deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)`;
-    console.log(styles.mainContainer);
+    //console.log(styles.mainContainer);
     return (
       <div className={styles.mainContainer} style={{background:`${stls}`}}>
         <div className={styles.container}>

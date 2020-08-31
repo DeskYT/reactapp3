@@ -30,7 +30,7 @@
   box-sizing: border-box;
   background-color: #242424;
   text-align: center;
-  width: 320px;
+  width: 330px;
   margin-top: 120px;
   border-radius: 10px;
   flex-basis: 320px;
@@ -53,6 +53,7 @@
   height: 100%;
   width: 100%;
 }
+
 /*
 .userInfo > h2, h3, h4, h5{
   font-family: "Antipasto Pro";
@@ -76,6 +77,16 @@
   color: #00ad1e;
   padding: inherit;
 }
+
+.userInfo{
+  margin-top: 5px;
+  text-align: center;
+  color: #00ad1e;
+  padding: inherit;
+  overflow-wrap: break-word;
+  font-size: 1.3rem;
+}
+
 .removeCross{
   color: white;
   font-weight: bold;
@@ -83,4 +94,39 @@
   margin-bottom: 20px;
   cursor: pointer;
   user-select: none;
+}
+
+.iconContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.emailIcon{
+  background: url("./icons/emailIcon.png"), #ffffff;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.nameIcon{
+  background: url("./icons/profileIcon.png"), #ffffff;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.locationIcon{
+  background: url("./icons/locationIcon.png"), #ffffff;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.iconActive{
+  background-color: #ffa800;
 }

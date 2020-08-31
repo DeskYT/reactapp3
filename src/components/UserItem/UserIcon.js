@@ -1,39 +1,22 @@
 import React, { Component } from 'react';
+import styles from './UserItem.module.scss';
 
 export default class UserIcon extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            active: false,
-        };
     }
     hoverHandler = () => {
-        const {text, changeText} = this.props;
-        this.setState({active: true});
-        changeText(text);
+        const {text, changeActive} = this.props;
+        changeActive(text, this.props.type);
     }
     render() {
         const {
-            styles,
+            type,
+            isActive
         } = this.props;
-        //console.log(this.props);
-
-        /*return (
-          <div className={styles.userItemContainer} id={id}>
-            <div className={styles.userAvatar}>
-              <img src={imgSrc} alt="userAvatar"/>
-            </div>
-            <div className="userInfo">
-              <h2 className={styles.userFName}>{`${name.first} ${name.last}`}</h2>
-              <h3 className={styles.userEmail}>{email}</h3>
-              <h4 className={styles.userLocation}>{`${location.city}, ${location.country}`}</h4>
-            </div>
-            <div className={styles.removeCross} onClick={this.removeUser}>X</div>
-          </div>
-
-        );*/
+        const className = isActive ? styles[`${type}Icon`] + " " + styles.iconActive : styles[`${type}Icon`]
         return(
-            <div className={styles} onMouseOver={this.hoverHandler}>prof</div>
+            <div className={className} onMouseOver={this.hoverHandler}> </div>
         )
     }
 }
