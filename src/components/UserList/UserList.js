@@ -11,7 +11,6 @@ export default class UserList extends Component {
     this.state = {
       users: [],
       isFetching: true,
-      isStated: false,
       error: null,
       deg: 180,
     };
@@ -54,9 +53,6 @@ export default class UserList extends Component {
             isFetching: false,
           })
         });
-    //const newUsers = await getData();
-
-    //console.log(this.state);
   };
   removeUser = (id) =>{
     if (id > -1) {
@@ -74,23 +70,17 @@ export default class UserList extends Component {
   handleClick = (event) => {
     event.preventDefault();
     this.fetchUsers();
-    //console.log(event.currentTarget);
-  }
-  handleToggleClick = () =>{
-    this.setState({isStated: !this.state.isStated});
   }
 
   render() {
     const { users, isFetching, error } = this.state;
     let stls =  `linear-gradient(${this.state.deg}deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)`;
-    //console.log(styles.mainContainer);
     return (
       <div className={styles.mainContainer} style={{background:`${stls}`}}>
         <div className={styles.container}>
           {isFetching && <Spinner />}
           {error && <Error error={error} hideError={this.hideError} />}
           {users.length > 0 && this.mapUsers()}
-          {/*<div onClick={this.handleToggleClick}>{this.state.isStated ? 'UnState it':'State it'}</div>*/}
         </div>
         <div className={styles.loadButton} onClick={this.fetchUsers}>LOAD</div>
       </div>
