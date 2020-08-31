@@ -29,7 +29,7 @@ export default class UserList extends Component {
   }
   timer = () => {
     // setState method is used to update the state
-    //this.setState({ deg: this.state.deg + 1 });
+    this.setState({ deg: this.state.deg + 1 });
   }
 
   hideError = () => {
