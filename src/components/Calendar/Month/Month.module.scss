@@ -6,7 +6,7 @@
   @extend %flex-center;
   background-color: $second-light-color;
   margin-left: 20px;
-  border: 6px solid $primary-light-color;
+  border: 6px solid $primary-dark-color;
   border-radius: 40px;
 }
 
@@ -28,5 +28,6 @@
 
 .dayName {
   text-transform: uppercase;
-  color: $day-name-color;
+  color: $primary-light-color;
+  font-weight: 800;
 }

@@ -5,8 +5,9 @@
   @extend %flex-center;
 }
 .currentDay {
-  color: $day-name-color;
-  border: $font-size-value * 0.25 solid;
+  border-radius: $font-size-value * 0.6;
+  background-color: $primary-dark-color;
+  color: white;
 }
 .otherMonth {
   color: $other-month-day-color;
