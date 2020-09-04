@@ -12,8 +12,9 @@
 }
 .name {
   @extend %title;
+  margin-bottom: $font-size-value * 0.85;
   font-weight: bold;
 }
 .number {
-  font-size: $font-size-value * 15;
+  font-size: $font-size-value * 18;
 }

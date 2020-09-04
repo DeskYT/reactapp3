@@ -22,8 +22,9 @@ class App extends Component {
   render() {
     console.log('component rendered');
     //return (<UserList />)
-    return(<NewCalendar language="ru"/>);
+    //return(<NewCalendar language="ru"/>);
     //return(<Timer />);
+    return(<FormLogin />);
   }
 }
 
