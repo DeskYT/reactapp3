@@ -1,0 +1,32 @@
+@import './../common_settings/common.scss';
+@import './../common_settings/theme.scss';
+
+.wrapper {
+  @extend %wrapper;
+  @extend %flex-center;
+  background-color: $second-light-color;
+  margin-left: 20px;
+  border: 6px solid $primary-light-color;
+  border-radius: 40px;
+}
+
+.title {
+  @extend %title;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $primary-dark-color;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  @extend %container;
+  @extend %flex-center;
+}
+
+.dayName {
+  text-transform: uppercase;
+  color: $day-name-color;
+}

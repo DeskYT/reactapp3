@@ -5,6 +5,7 @@ import UserList from "./components/UserList/UserList";
 import FormLogin from "./components/FormLogin";
 import Calendar from "./components/Calendar";
 import Timer from "./components/Timer/Timer";
+import NewCalendar from "./components/Calendar";
 
 class App extends Component {
   constructor(props) {
@@ -21,8 +22,8 @@ class App extends Component {
   render() {
     console.log('component rendered');
     //return (<UserList />)
-    //return(<Calendar />);
-    return(<Timer />);
+    return(<NewCalendar language="ru"/>);
+    //return(<Timer />);
   }
 }
 

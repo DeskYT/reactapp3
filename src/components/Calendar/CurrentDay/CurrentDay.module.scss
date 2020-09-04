@@ -1,0 +1,19 @@
+@import './../common_settings/common.scss';
+@import './../common_settings/theme.scss';
+.wrapper {
+  @extend %wrapper;
+  background-color: $primary-light-color;
+  & > * {
+    font-weight: lighter;
+    text-transform: uppercase;
+    color: $second-light-color;
+  }
+  border-radius: 40px;
+}
+.name {
+  @extend %title;
+  font-weight: bold;
+}
+.number {
+  font-size: $font-size-value * 15;
+}

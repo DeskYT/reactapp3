@@ -1,0 +1,13 @@
+@import './../../../common_settings/common.scss';
+@import './../../../common_settings/theme.scss';
+.box {
+  @extend %container;
+  @extend %flex-center;
+}
+.currentDay {
+  color: $day-name-color;
+  border: $font-size-value * 0.25 solid;
+}
+.otherMonth {
+  color: $other-month-day-color;
+}
