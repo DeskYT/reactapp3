@@ -22,7 +22,7 @@ export default class UserItem extends Component {
     this.setState({renderText: text});
     this.setState({
         icons: this.state.icons.map((value, index) => {
-            value.isActive = value.type == type;
+            value.isActive = value.type === type;
             return value;
         })
     })

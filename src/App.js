@@ -7,6 +7,7 @@ import Calendar from "./components/Calendar";
 import Timer from "./components/Timer/Timer";
 import NewCalendar from "./components/Calendar";
 import Carousel from "./components/Carousel"
+import UserLoader from "./components/UserLoader";
 
 class App extends Component {
   constructor(props) {
@@ -22,11 +23,11 @@ class App extends Component {
 
   render() {
     console.log('component rendered');
-    //return (<UserList />)
+    return (<UserLoader />)
     //return(<NewCalendar language="ru"/>);
     //return(<Timer />);
     //return(<FormLogin />);
-    const slideList = [
+    /*const slideList = [
       {
         src: "https://scontent.fdnk6-1.fna.fbcdn.net/v/t1.0-9/p960x960/49323186_3003482743010848_555597493396570112_o.jpg?_nc_cat=103&_nc_sid=8024bb&_nc_ohc=Z0EK-GQPQ_AAX8zBcZe&_nc_ht=scontent.fdnk6-1.fna&tp=6&oh=329ffd2b3a066d4f510f486acea05b0e&oe=5F78B214",
         title: "img",
@@ -43,7 +44,7 @@ class App extends Component {
         description: "this is an image3"
       }
     ];
-    return(<Carousel slides={slideList} />)
+    return(<Carousel slides={slideList} />)*/
   }
 }
 

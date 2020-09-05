@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Spinner from '../Spinner/Spinner';
 import UserItem from './UserItem/UserItem';
-import { getData } from '../../api';
+import {getData} from '../../api';
 import styles from './UserList.module.scss';
 import Error from "../Error/Error";
 
@@ -40,10 +40,9 @@ export default class UserList extends Component {
       isFetching: true,
     });
     getData()
-        .then(res =>{
-          const newUsers = res;
+        .then(newUsers =>{
           this.setState({
-            users: [...this.state.users, ...newUsers],
+            users: [...this.state.users, ...(newUsers)],
             isFetching: false,
           });
         })
