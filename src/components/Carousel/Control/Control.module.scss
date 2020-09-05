@@ -1,0 +1,17 @@
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button{
+  background-color: gainsboro;
+  border: 1px solid gray;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.buttonToggled{
+  background-color: #00b300;
+}
