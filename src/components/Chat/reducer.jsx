@@ -2,8 +2,6 @@ export default function funChatReducer(state, action) {
     console.log(action,state);
     switch (action.type) {
         case "NEW_MSG":{
-            /*const {users, messages} = state;
-            const {message} = action;*/
             const {users, messages} = state;
             const {message} = action;
             const msgFromUser = {

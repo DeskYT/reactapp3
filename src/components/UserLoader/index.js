@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {getUsers} from "../../api";
-import UserItem from "../UserList/UserItem/UserItem";
 
 class UserLoader extends Component {
     constructor(props) {
