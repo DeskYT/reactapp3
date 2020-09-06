@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {getUsers} from "../../api";
+import {getData} from "../../api";
 
 class UserLoader extends Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class UserLoader extends Component {
 
     loadUsers = () => {
         const {currentPage} = this.state;
-        getUsers({
+        getData({
             page: currentPage,
             result: 10,
         }).then(data => {

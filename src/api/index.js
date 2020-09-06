@@ -8,6 +8,7 @@ import querystring from "querystring"
  * @param rest
  * @returns {Promise<any>}
  */
+/*
 export const getUsers = ({
     inc = ['id', 'name', 'email', 'picture'],
     ...rest
@@ -19,7 +20,7 @@ export const getUsers = ({
         )}`
     ).then((res) => res.json());
 }
-
+*/
 const http = axios.create({
     baseURL: DATA_URL,
     responseType: "json",
