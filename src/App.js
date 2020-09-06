@@ -23,9 +23,9 @@ class App extends Component {
 
   render() {
     console.log('component rendered');
-    return (<UserLoader />)
+    //return (<UserLoader />)
     //return(<NewCalendar language="ru"/>);
-    //return(<Timer />);
+    return(<Timer />);
     //return(<FormLogin />);
     /*const slideList = [
       {

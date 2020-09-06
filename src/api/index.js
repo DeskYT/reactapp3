@@ -13,13 +13,13 @@ export const getUsers = ({
     ...rest
 } = {}) => {
     return fetch(
-        `${$DATA_URL}?${querystring.stringify(
+        `${DATA_URL}?${querystring.stringify(
             {inc,...rest},
             {arrayFormat: 'comma'}
         )}`
     ).then((res) => res.json());
 }
-/*
+
 const http = axios.create({
     baseURL: DATA_URL,
     responseType: "json",
@@ -32,4 +32,4 @@ export const getData = async()  => {
     } = await http.get("?results=10");
 
     return results;
-};*/
+};
