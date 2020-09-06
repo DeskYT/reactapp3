@@ -12,26 +12,25 @@ const Timer = (props) => {
             timer = setInterval(timerHandler, 1);
             console.log( new Date (Date.now() - time) );
             console.log( startTime );
-
         }
         else{
             console.log("Disabling...");
-            clearInterval(timer);
-            setStartTime(nullDate);
         }
-    }, [isEnabled]);
+        return () => {
+            clearInterval(timer);
+        };
+    }, [isEnabled, startTime]);
 
     const timerHandler = () => {
-        setTime(Date.now() - startTime);
+
+            setTime(Date.now() - startTime);
     };
     const start = () => {
         setEnabled(true);
         setStartTime( new Date (Date.now() - time) );
-        //timer = setInterval(timerHandler, 1);
     };
     const stop = () => {
         setEnabled(false);
-        //clearInterval(timer);
     };
     const reset = () => {
         setTime(0);

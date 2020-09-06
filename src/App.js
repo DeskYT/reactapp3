@@ -25,10 +25,10 @@ class App extends Component {
 
   render() {
     console.log('component rendered');
-    return (<Chat/>)
+    //return (<Chat/>)
     //return (<UserLoader />)
     //return(<NewCalendar language="ru"/>);
-    //return(<Timer />);
+    return(<Timer />);
     //return(<Counter/>)
     //return(<FormLogin />);
     /*const slideList = [
