@@ -15,8 +15,9 @@ const Timer = (props) => {
 
         }
         else{
-            console.log("Disabling...")
+            console.log("Disabling...");
             clearInterval(timer);
+            setStartTime(nullDate);
         }
     }, [isEnabled]);
 
@@ -33,9 +34,9 @@ const Timer = (props) => {
         //clearInterval(timer);
     };
     const reset = () => {
-        setEnabled(false);
         setTime(0);
         setStartTime(nullDate);
+        setEnabled(false);
     };
 
     const msToTime = (s) => {

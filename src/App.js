@@ -8,6 +8,8 @@ import Timer from "./components/Timer/Timer";
 import NewCalendar from "./components/Calendar";
 import Carousel from "./components/Carousel"
 import UserLoader from "./components/UserLoader";
+import Counter from "./components/Counter";
+import Chat from "./components/Chat";
 
 class App extends Component {
   constructor(props) {
@@ -23,9 +25,11 @@ class App extends Component {
 
   render() {
     console.log('component rendered');
+    return (<Chat/>)
     //return (<UserLoader />)
     //return(<NewCalendar language="ru"/>);
-    return(<Timer />);
+    //return(<Timer />);
+    //return(<Counter/>)
     //return(<FormLogin />);
     /*const slideList = [
       {
