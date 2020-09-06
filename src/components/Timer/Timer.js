@@ -10,8 +10,6 @@ const Timer = (props) => {
     useEffect(() => {
         if (isEnabled){
             timer = setInterval(timerHandler, 1);
-            console.log( new Date (Date.now() - time) );
-            console.log( startTime );
         }
         else{
             console.log("Disabling...");
@@ -19,7 +17,7 @@ const Timer = (props) => {
         return () => {
             clearInterval(timer);
         };
-    }, [isEnabled, startTime]);
+    }, [isEnabled]);
 
     const timerHandler = () => {
 
