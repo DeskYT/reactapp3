@@ -24,7 +24,7 @@ class UserCardPractice extends Component {
                     users: res,
                     isFetching: false});
             })
-            .catch(e => console.error(e));
+            .catch(console.error);
     }
 
 

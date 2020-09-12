@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import styles from "./UserCard.module.scss"
+import UserAvatar from "./UserAvatar";
+import UserFullName from "./UserFullName";
+import UserAbout from "./UserAbout";
 
 class UserCard extends Component {
     constructor(props) {
@@ -11,11 +14,9 @@ class UserCard extends Component {
         return (
             <div className={styles.cardContainer}>
                 <div className={styles.bodyContainer}>
-                    <img className={styles.userAvatar} src={user.avatar} alt=""/>
-                    <h3 className={styles.userFullName}>
-                       {`${user.name} ${user.surname}`}
-                    </h3>
-                    <div className={styles.userAbout}>{user.about}</div>
+                    <UserAvatar src={user.avatar} />
+                    <UserFullName fullName={`${user.name} ${user.surname}`}/>
+                    <UserAbout about={user.about}/>
                 </div>
             </div>
         );

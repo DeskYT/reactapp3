@@ -16,8 +16,10 @@
   border-radius: 15px;
   overflow: hidden;
   flex-basis: 320px;
-  margin-top: 20px;
+  margin: 20px;
 }
+
+
 
 .bodyContainer{
   height: $card-min-height*0.6;
@@ -30,20 +32,3 @@
   padding: 0 20px;
 }
 
-.userAvatar{
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff3e3;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-}
-
-.userFullName, .userAbout{
-  margin-top: 10px;
-  font-family: Ubuntu, serif;
-}
-
-.userFullName{
-  font-weight: bold;
-}
