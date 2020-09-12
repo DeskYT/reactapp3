@@ -33,5 +33,26 @@
     "surname": "Smith5",
     "about": "some text about2",
     "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 6,
+    "name": "John6",
+    "surname": "Smith6",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 7,
+    "name": "John7",
+    "surname": "Smith7",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 8,
+    "name": "John8",
+    "surname": "Smith8",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
   }
 ]
