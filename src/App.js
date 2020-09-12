@@ -11,6 +11,7 @@ import UserLoader from "./components/UserLoader";
 import Counter from "./components/Counter";
 import Chat from "./components/Chat";
 import UserCard from "./components/UserCard";
+import UserCardPractice from "./components/UserCardPractice"
 
 class App extends Component {
   constructor(props) {
@@ -26,8 +27,9 @@ class App extends Component {
 
   render() {
     console.log('component rendered');
+    return (<UserCardPractice />);
     //return (<Chat/>)
-    return <UserCard />;
+    //return <UserCard />;
     //return (<UserLoader />)
     //return(<NewCalendar language="ru"/>);
     //return(<Timer />);
