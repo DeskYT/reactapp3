@@ -38,12 +38,11 @@
   margin-top: -50px;
 }
 
-.userFullName{
+.userFullName, .userAbout{
   margin-top: 10px;
   font-family: Ubuntu, serif;
-  font-weight: bold;
 }
 
-.userAbout{
-
+.userFullName{
+  font-weight: bold;
 }
