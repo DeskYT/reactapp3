@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import styles from './UserCardPractice.module.scss'
 import UserCard from "./UserCard";
+import PropTypes from "prop-types";
+import UserFullName from "./UserCard/UserFullName";
 
 class UserCardPractice extends Component {
     constructor(props) {
@@ -46,5 +48,7 @@ class UserCardPractice extends Component {
         );
     }
 }
-
+UserFullName.propTypes = {
+    users: PropTypes.array.isRequired,
+};
 export default UserCardPractice;
