@@ -1,0 +1,49 @@
+@import "src/components/UserCardPractice/common_settings/vars";
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.cardContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  min-height: $card-min-height;
+  background-color: #4300b5;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-basis: 320px;
+  margin-top: 20px;
+}
+
+.bodyContainer{
+  height: $card-min-height*0.6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: #ccd5ff;
+  padding: 0 20px;
+}
+
+.userAvatar{
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff3e3;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+}
+
+.userFullName, .userAbout{
+  margin-top: 10px;
+  font-family: Ubuntu, serif;
+}
+
+.userFullName{
+  font-weight: bold;
+}

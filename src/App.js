@@ -10,7 +10,6 @@ import Carousel from "./components/Carousel"
 import UserLoader from "./components/UserLoader";
 import Counter from "./components/Counter";
 import Chat from "./components/Chat";
-import UserCard from "./components/UserCard";
 import UserCardPractice from "./components/UserCardPractice"
 
 class App extends Component {

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "John",
+    "surname": "Smith",
+    "about": "some text about",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 2,
+    "name": "John2",
+    "surname": "Smith2",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 3,
+    "name": "John3",
+    "surname": "Smith3",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 4,
+    "name": "John4",
+    "surname": "Smith4",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  },
+  {
+    "id": 5,
+    "name": "John5",
+    "surname": "Smith5",
+    "about": "some text about2",
+    "avatar": "https://hairstyles.thehairstyler.com/hairstyle_views/front_view_images/1647/original/James-Cameron.jpg"
+  }
+]

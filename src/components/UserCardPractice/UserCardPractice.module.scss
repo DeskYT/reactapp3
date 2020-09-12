@@ -1,48 +1,5 @@
-@import "./common_settings/vars.scss";
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-.cardContainer{
-  position: relative;
+.container{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-  min-height: $card-min-height;
-  width: 320px;
-  background-color: #4300b5;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.bodyContainer{
-  height: $card-min-height*0.6;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  background-color: #ccd5ff;
-  padding: 0 20px;
-}
-
-.userAvatar{
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff3e3;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-}
-
-.userFullName, .userAbout{
-  margin-top: 10px;
-  font-family: Ubuntu, serif;
-}
-
-.userFullName{
-  font-weight: bold;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
